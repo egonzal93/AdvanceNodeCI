@@ -10,7 +10,7 @@ const redis = require('redis');
 const keys = require('../config/keys');
 // const redisUrl = 'redis://127.0.0.1:6379';
 
-const redisClient = redis.createClient(redisUrl);
+const redisClient = redis.createClient(keys.redisUrl);
 const util = require('util');
 
 redisClient.hget = util.promisify(redisClient.hget);
