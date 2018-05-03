@@ -3,3 +3,5 @@
 /client/node_modules/
 /package-lock.json
 /client/package-lock.json
+/config/ci.js
+/config/dev.js
